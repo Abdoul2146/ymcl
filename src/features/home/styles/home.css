@@ -1,7 +1,4 @@
 /* Home feature specific styles - separated from UI */
-.home-hero-gradient {
-  background: linear-gradient(135deg, var(--color-surface-container-low) 0%, var(--color-surface) 100%);
-}
 .home-card-underline {
   height: 2px;
   width: 0;

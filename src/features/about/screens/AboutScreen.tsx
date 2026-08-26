@@ -1,4 +1,5 @@
 import Image from "next/image";
+import aboutImage from "../../../../assets/about-section.png";
 import "../styles/about.css";
 
 export function AboutScreen() {
@@ -23,8 +24,8 @@ export function AboutScreen() {
               fill
               sizes="(max-width: 767px) 100vw, 50vw"
               className="object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSvn31e6LzrIImlf3kafJPwnVk1zPHtqCe8lHsE53PT0VVCyxXmIsbT5nUTtDWMCGe_j1OhIM63h1v8VfN_2mJeB9X8Hl07tbBSwK66V74Moo1QYxvYutaXYHl5CE6u0Sf2d4Jfw_pdg4-rI63IFw2AriUJEJ11boKSQ_SUnRrLH_R1kDY-B48s7_uVo_oCxaeHL0Gzo9mi78KHd4gxleJm-nXahMVy1UkbIshKuRe1qEkH3jgiu0Mxw"
-              alt="Boardroom"
+              src={aboutImage}
+              alt="Professionals reviewing plans beside construction and agricultural operations"
             />
           </div>
         </div>

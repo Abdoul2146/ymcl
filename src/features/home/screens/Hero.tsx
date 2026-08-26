@@ -1,37 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
+import heroImage from "../../../../assets/hero-section-image.png";
 import "../styles/home.css";
 
 export function Hero() {
   return (
-    <section className="min-h-[560px] md:min-h-[640px] flex items-center bg-surface-container-low dark:bg-surface-container overflow-hidden home-hero-gradient">
-      <div className="max-w-[1280px] mx-auto px-5 md:px-16 w-full py-16 md:py-24">
-        <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
-          <div className="rounded-2xl p-6 md:p-8 dark:bg-white/95 shadow-sm">
-            <Image
-              src="/logo-nobg.png"
-              alt="Yarima Multi Concept Limited"
-              width={320}
-              height={320}
-              preload
-              sizes="(max-width: 767px) 220px, 300px"
-              className="w-[220px] md:w-[300px] h-auto object-contain"
-            />
-          </div>
+    <section className="relative isolate flex min-h-[560px] items-center overflow-hidden bg-primary md:min-h-[640px]">
+      <Image
+        src={heroImage}
+        alt=""
+        fill
+        preload
+        sizes="100vw"
+        className="-z-20 object-cover object-[52%_center] md:object-center"
+      />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(0,19,47,0.58)_0%,rgba(0,25,61,0.52)_45%,rgba(0,8,23,0.78)_100%)]" />
 
-          <span className="text-[14px] font-semibold uppercase tracking-wider text-secondary dark:text-secondary-fixed">
+      <div className="mx-auto w-full max-w-[1280px] px-5 py-16 md:px-16 md:py-24">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center text-white">
+          <span className="text-[14px] font-semibold uppercase tracking-wider text-secondary-fixed">
             Yarima Multi Concept Limited
           </span>
 
-          <h1 className="text-[32px] md:text-[48px] font-extrabold leading-[40px] md:leading-[56px] tracking-tight text-primary dark:text-on-surface">
+          <h1 className="text-[32px] font-extrabold leading-[40px] tracking-tight text-white drop-shadow-sm md:text-[48px] md:leading-[56px]">
             Multiple Solutions.
             <br />
             Endless Possibilities.
           </h1>
 
-          <div className="h-1 w-10 rounded-full bg-[#d4af37]" />
+          <div className="h-1 w-10 rounded-full bg-[#d4af37]" aria-hidden="true" />
 
-          <p className="text-[18px] leading-7 font-medium text-on-surface dark:text-neutral-300 max-w-[560px]">
+          <p className="max-w-[620px] text-[18px] font-medium leading-7 text-white/90 drop-shadow-sm">
             A diversified holding delivering institutional-grade services across agriculture, international trade,
             construction, and general contracting with absolute reliability.
           </p>
@@ -39,13 +38,13 @@ export function Hero() {
           <div className="flex flex-wrap justify-center gap-4 pt-2">
             <Link
               href="/contact"
-              className="bg-primary text-on-primary dark:bg-primary-fixed dark:text-on-primary-fixed font-semibold text-[14px] uppercase tracking-wider px-8 py-4 rounded hover:opacity-90 transition-opacity"
+              className="rounded bg-secondary-fixed px-8 py-4 text-[14px] font-semibold uppercase tracking-wider text-on-secondary-fixed transition-colors hover:bg-secondary-fixed-dim"
             >
               Request a Quote
             </Link>
             <Link
               href="/services"
-              className="bg-transparent text-primary dark:text-primary-fixed border border-primary dark:border-primary-fixed font-semibold text-[14px] uppercase tracking-wider px-8 py-4 rounded hover:bg-surface-variant dark:hover:bg-primary-container/30 transition-colors"
+              className="rounded border border-white/80 bg-black/10 px-8 py-4 text-[14px] font-semibold uppercase tracking-wider text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-primary"
             >
               Explore Our Services
             </Link>
