@@ -1,5 +1,8 @@
 import Image from "next/image";
 import aboutImage from "../../../../assets/about-section.png";
+import constructionImage from "../../../../assets/construction-about.png";
+import agricultureImage from "../../../../assets/farms-about.png";
+import importExportImage from "../../../../assets/import-export-about.png";
 import "../styles/about.css";
 
 export function AboutScreen() {
@@ -71,21 +74,21 @@ export function AboutScreen() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBq7ve6tIqrf3wuhEUg_Gw3FiMqzs3kRU80KGk1Nl0Ya7AbHnTc8Q9km8-YtYAfZ1LyGBjBhs2YxJ1iNJxy6dPER5SCpX6v_1pky0T2uePSFZP4SkLRfpLJjn-D9u-rIxS9LEx44PsFPJ8Xx15cOAergMMRKgBMTor0p_8fwO0xv6AkhCstlVIYHmWM8wPYvBp0KwWQGK1wpYFhc3NOXs7fC6-mkxobx2keG0dvAx8Ygv0IbXTPZ9rgAw",
+                img: constructionImage,
                 icon: "architecture",
                 title: "Construction & Engineering",
                 desc: "Delivering commercial, residential, and infrastructure projects with rigorous adherence to global standards and structural integrity.",
                 iconColor: "#d4af37",
               },
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqDQ4k5p1HQjEal4vIOaxi-QcGolh2cun-wN6msPPPoFspLHXm7krY2wPEPNhUdpQUKAWzSPHG025cdEoKts_dHiGJRw1z3FA7Sg6kua7RGeRm72Tra1_X3yJGGJr_LqzyZu7ThKfmwRfxIjeVsWy6LBtrLpeUPVIsgMxJi62CJIv0UW6ZAL-NeoVCK2vO-PNq9XtS5kpLz5EG4BAuqvcGDnhoLB39acrzV2hge9O9Ae5GE9TU3-eeFA",
+                img: agricultureImage,
                 icon: "agriculture",
                 title: "Agricultural Development",
                 desc: "Sustainable farming operations, processing, and distribution networks designed to support local economies and secure supply chains.",
                 iconColor: "#23501e",
               },
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBBlR0f92D17ufhVt_qLt5unoenNMt9kfJdgZ4su2NG9sLydauG18DJUroiEZfXHGvNWFK921KL4aMVPAGC__py-8n_qEB_jxxaDgMCmCp2YcklPa6KP3P2Nf16puaQZKNkKZs814ZmLYBicz2qssHFdzVP2iOP85d4eKjQABdcsVOFhPsPyVOa6X3Z43PcVkz37nvrRbPOCwg0drRNP0J53MRx4ReiBOJo6OtUUObTh_7gXwFSBjKZsw",
+                img: importExportImage,
                 icon: "flight_takeoff",
                 title: "Import & Export",
                 desc: "Facilitating global trade through robust logistics networks, ensuring seamless international transactions for critical commodities.",

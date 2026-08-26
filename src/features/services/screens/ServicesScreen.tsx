@@ -1,6 +1,9 @@
 import "../styles/services.css";
 import Image from "next/image";
 import Link from "next/link";
+import agricultureImage from "../../../../assets/agric-service.png";
+import constructionImage from "../../../../assets/construction-service.png";
+import importExportImage from "../../../../assets/import-export-service.png";
 
 export function ServicesScreen() {
   return (
@@ -63,7 +66,7 @@ export function ServicesScreen() {
                 sizes="(max-width: 767px) 100vw, 50vw"
                 alt="Export Logistics"
                 className="object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0pBRGHgBHiCkl1qPuVhm4NpMn1sMxp7P5BqUk1lUUZHzW-TIICgixi0r2cgepSmXeuvm0J0vkJaFWL4a7KdmDPLH67rXQ9L5ev6wxW91RogdvVUS6pmS-9AoIAWxoDp8G0kMtDv-J3ya3Wc-WER6sF1E_-CFoH8pTiXoewSnLyk3RloMz7aYu63op5Z5Ekkm7Vog58O3Wt9laCvld6PHqOuiENJYO0TBr2FahULcJ2t1pSZ-rmhHCDw"
+                src={importExportImage}
               />
             </div>
           </div>
@@ -79,8 +82,8 @@ export function ServicesScreen() {
                 fill
                 sizes="(max-width: 767px) 100vw, 50vw"
                 alt="Agricultural Fields"
-                className="object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeuYTP2Hugg5Lhwy5AjZBlSIwsk1VQuQ0UlWyM0lmHUc-E7c9TpZQD_KcMbIyu2ywEtzi-JAYGUkpoMwOZWL9sYP1O89oj5soKepXZUMERZ4oYU0RIZVWiAbSgNGhZh--HFuqrfbZ2WncIPiTOQOInIKstss7jqycYVyOFMUaFolisqp6fYGcb4G_ZmLeUsd5-44pUfFl6huDCMz-qFdVeyHEHHZ7qcCw_HBtgIcZwGZdfd1PMX6WaFA"
+                className="object-cover object-[58%_center]"
+                src={agricultureImage}
               />
             </div>
           </div>
@@ -160,7 +163,7 @@ export function ServicesScreen() {
               fill
               sizes="(max-width: 767px) 100vw, 50vw"
               className="object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMXX0DwXvjWhn81T4yj7q9ieACedgoLSK7OvXiThiU0g3jsw-I9ezu04dhAd8EKKqjYdhob10xGdCtwmAYUWU8ELH6ZuBNvOzeH33OPso5rSR0RpPURTrEowIcaFhK0iKxMIQ67sz4wpEPIwq2-FwV6hfGMmj8U9ZvGruhLq90ci56aQl9cYx0mrB3ti1B2xq5ZPoCQhY6tfmKOpo6EPyqm3cgg4xIMt24LU9IC30DbiESUr3UwWpRtA"
+              src={constructionImage}
               alt="Construction"
             />
           </div>

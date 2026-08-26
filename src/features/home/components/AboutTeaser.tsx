@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import boardroomImage from "../../../../assets/boardroom-seccond-home.png";
 
 export function AboutTeaser() {
   return (
@@ -11,8 +12,8 @@ export function AboutTeaser() {
               fill
               sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 50vw, 576px"
               className="object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwG1b8yVDlQ8jjJpBFbzHa1Z6XpUd11TS6cZxIIgvhuUQZKxJ8wh-ICG8lyGceFJhlO_GzWhFtcEFyUDy_MdGoy9aFhqkKhEuXkdc17-0wrr8kOhp-_tEhvP6W-HPHK6LpwWBqW9b_PUn8ipnHlwGCYgKsK0__dB__njtV6KvIxd3eE23bvvSTzC2Mw_Lra2uRPvug5AzRpJLm2-jkRGgLHpLu-xb3-nuKXq-uBGDf8xEeWGuAuwyQCQ"
-              alt="Executive boardroom"
+              src={boardroomImage}
+              alt="YMCL professionals reviewing cross-sector plans in a boardroom"
             />
           </div>
         </div>
