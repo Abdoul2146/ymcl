@@ -102,8 +102,12 @@ export function Header() {
             aria-pressed={theme === "dark"}
             className="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-on-surface dark:text-neutral-200 hover:bg-surface-container hover:border-outline transition-colors focus-visible:ring-2 ring-secondary"
           >
-            <span className="material-symbols-outlined text-[20px] dark:hidden" aria-hidden="true">dark_mode</span>
-            <span className="material-symbols-outlined hidden text-[20px] dark:inline" aria-hidden="true">light_mode</span>
+            <span className="dark:hidden" aria-hidden="true">
+              <span className="material-symbols-outlined block text-[20px]">dark_mode</span>
+            </span>
+            <span className="hidden dark:block" aria-hidden="true">
+              <span className="material-symbols-outlined block text-[20px]">light_mode</span>
+            </span>
           </button>
           <Link
             href="/contact"
@@ -120,8 +124,12 @@ export function Header() {
             aria-pressed={theme === "dark"}
             className="w-9 h-9 rounded-full border border-outline flex items-center justify-center text-on-surface dark:text-neutral-200 hover:bg-surface-container transition-colors"
           >
-            <span className="material-symbols-outlined text-[18px] dark:hidden" aria-hidden="true">dark_mode</span>
-            <span className="material-symbols-outlined hidden text-[18px] dark:inline" aria-hidden="true">light_mode</span>
+            <span className="dark:hidden" aria-hidden="true">
+              <span className="material-symbols-outlined block text-[18px]">dark_mode</span>
+            </span>
+            <span className="hidden dark:block" aria-hidden="true">
+              <span className="material-symbols-outlined block text-[18px]">light_mode</span>
+            </span>
           </button>
           <button
             ref={menuButtonRef}
