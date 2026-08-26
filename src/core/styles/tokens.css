@@ -1,0 +1,88 @@
+/* Stature Corporate System - Design Tokens */
+:root {
+  --color-surface: #f8f9fa;
+  --color-surface-dim: #d9dadb;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container: #edeeef;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  --color-on-surface: #101315;
+  --color-on-surface-variant: #1a1e21;
+  --color-inverse-surface: #2e3132;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-outline: #5f6368;
+  --color-outline-variant: #6b7280;
+  --color-surface-tint: #476083;
+  --color-primary: #002058;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #001f3f;
+  --color-on-primary-container: #2f486a;
+  --color-inverse-primary: #afc8f0;
+  --color-secondary: #735c00;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fed65b;
+  --color-on-secondary-container: #745c00;
+  --color-tertiary: #000700;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #002501;
+  --color-on-tertiary-container: #629258;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d4e3ff;
+  --color-primary-fixed-dim: #afc8f0;
+  --color-on-primary-fixed: #001c3a;
+  --color-on-primary-fixed-variant: #2f486a;
+  --color-secondary-fixed: #ffe088;
+  --color-secondary-fixed-dim: #e9c349;
+  --color-on-secondary-fixed: #241a00;
+  --color-on-secondary-fixed-variant: #574500;
+  --color-tertiary-fixed: #bcf0ae;
+  --color-tertiary-fixed-dim: #a1d494;
+  --color-on-tertiary-fixed: #002201;
+  --color-on-tertiary-fixed-variant: #23501e;
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+  --color-surface-variant: #e1e3e4;
+
+  /* gold premium accent */
+  --color-gold: #d4af37;
+  --color-gold-hover: #c9a230;
+
+  /* spacing */
+  --spacing-base: 8px;
+  --spacing-container-max: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 20px;
+
+  /* rounded */
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* Dark mode tokens - subtle shift, keep primary navy but adjust surfaces */
+.dark {
+  --color-primary: #000613;
+  --color-surface: #121316;
+  --color-surface-dim: #1a1c1e;
+  --color-surface-bright: #1e2023;
+  --color-surface-container-lowest: #1a1c1e;
+  --color-surface-container-low: #1e2023;
+  --color-surface-container: #232529;
+  --color-surface-container-high: #2a2c30;
+  --color-surface-container-highest: #32343a;
+  --color-on-surface: #e1e3e4;
+  --color-on-surface-variant: #c4c6cf;
+  --color-background: #0f1113;
+  --color-on-background: #e1e3e4;
+  --color-surface-variant: #b4b9c4;
+  --color-outline-variant: #4a4e57;
+  --color-outline: #8a8d96;
+}

@@ -1,0 +1,7 @@
+/* About feature styles separated from UI */
+.about-card-hover {
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+.about-card-hover:hover {
+  box-shadow: 0 12px 24px rgba(0, 31, 63, 0.08);
+}

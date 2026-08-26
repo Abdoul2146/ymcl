@@ -1,0 +1,11 @@
+/* Projects feature styles */
+.projects-card {
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.projects-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 31, 63, 0.08);
+}
+.projects-filter-active {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}

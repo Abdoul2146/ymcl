@@ -1,0 +1,16 @@
+/* Home feature specific styles - separated from UI */
+.home-hero-gradient {
+  background: linear-gradient(135deg, var(--color-surface-container-low) 0%, var(--color-surface) 100%);
+}
+.home-card-underline {
+  height: 2px;
+  width: 0;
+  background: var(--color-gold);
+  transition: width 300ms ease;
+}
+.group:hover .home-card-underline {
+  width: 100%;
+}
+.home-card-underline--green {
+  background: var(--color-on-tertiary-fixed-variant);
+}

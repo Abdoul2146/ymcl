@@ -1,0 +1,15 @@
+/* Contact feature styles */
+.contact-input {
+  transition: border-color 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+.contact-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(0, 31, 63, 0.08);
+}
+.contact-input::placeholder {
+  color: var(--color-outline);
+  opacity: 1;
+}
+select.contact-input {
+  appearance: auto;
+}
