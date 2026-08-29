@@ -3,6 +3,7 @@ import aboutImage from "../../../../assets/about-section.png";
 import constructionImage from "../../../../assets/construction-about.png";
 import agricultureImage from "../../../../assets/farms-about.png";
 import importExportImage from "../../../../assets/import-export-about.png";
+import fieldLeaderImage from "../../../../assets/his images/04.jpg";
 import "../styles/about.css";
 
 export function AboutScreen() {
@@ -60,6 +61,43 @@ export function AboutScreen() {
               <p className="text-[16px] leading-6 text-on-surface dark:text-neutral-300">{c.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="py-24 px-5 md:px-16 bg-white dark:bg-surface-container-lowest border-y border-outline-variant/30">
+        <div className="max-w-[1280px] mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-[460px] rounded-xl overflow-hidden border border-outline-variant/40 shadow-md bg-surface-container-low">
+            <Image
+              fill
+              sizes="(max-width: 767px) 100vw, 50vw"
+              className="object-cover object-[45%_center]"
+              src={fieldLeaderImage}
+              alt="YMCL field representative on operational assignment"
+            />
+          </div>
+          <div className="flex flex-col gap-5">
+            <span className="text-[12px] font-bold uppercase tracking-[0.22em] text-secondary">Operational Leadership</span>
+            <h2 className="text-[32px] md:text-[40px] font-extrabold leading-10 md:leading-[48px] text-primary dark:text-on-surface">
+              Leadership in the Field
+            </h2>
+            <div className="w-10 h-1 rounded-full" style={{ backgroundColor: "#d4af37" }} aria-hidden="true" />
+            <p className="text-[16px] leading-7 text-on-surface dark:text-neutral-300">
+              YMCL maintains hands-on presence across trade, logistics, export coordination, and client-facing operations.
+              Our leadership approach is built around direct supervision, documentation, and practical field engagement.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4 pt-2">
+              {[
+                { value: "Trade", label: "Export coordination" },
+                { value: "Logistics", label: "Port-side follow-up" },
+                { value: "Field", label: "Operational presence" },
+              ].map((item) => (
+                <div key={item.value} className="rounded-lg border border-outline-variant/40 bg-surface-container-lowest dark:bg-surface-container-low p-4">
+                  <strong className="block text-primary dark:text-on-surface text-[18px] leading-7">{item.value}</strong>
+                  <span className="text-[13px] leading-5 text-on-surface dark:text-neutral-300">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

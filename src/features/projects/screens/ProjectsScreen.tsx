@@ -5,7 +5,7 @@ import { useState } from "react";
 import { PROJECTS, ProjectCategory } from "../services/projects.service";
 import "../styles/projects.css";
 
-const FILTERS: ProjectCategory[] = ["All", "Construction", "Agriculture", "Import / Export", "Equipment Logistics"];
+const FILTERS: ProjectCategory[] = ["All", "Import / Export", "Logistics", "Recognition", "Field Operations"];
 
 export function ProjectsScreen() {
   const [active, setActive] = useState<ProjectCategory>("All");
@@ -17,12 +17,12 @@ export function ProjectsScreen() {
       <header className="pt-10 pb-8 px-5 md:px-16 max-w-[1280px] mx-auto">
         <div className="max-w-3xl">
           <h1 className="text-[32px] md:text-[48px] font-extrabold leading-[40px] md:leading-[56px] tracking-tight text-primary dark:text-on-surface mb-6">
-            Our Portfolio
+            Field Operations
           </h1>
           <div className="h-1 w-10 rounded-full mb-6" style={{ backgroundColor: "#d4af37" }} aria-hidden="true" />
           <p className="text-[18px] leading-7 text-on-surface dark:text-neutral-300">
-            Showcasing a legacy of excellence across multiple sectors. From large-scale infrastructure to sustainable
-            agricultural developments, our projects reflect a commitment to quality and lasting impact.
+            Real field activity from YMCL&apos;s trade, logistics, export documentation, and operational coordination work.
+            These entries highlight verified presence and recognition rather than illustrative project claims.
           </p>
         </div>
       </header>
@@ -40,15 +40,15 @@ export function ProjectsScreen() {
                   : "bg-surface-container text-on-surface border-outline-variant/50 hover:bg-surface-variant"
               }`}
             >
-              {f === "All" ? "All Projects" : f}
+              {f === "All" ? "All Entries" : f}
             </button>
           ))}
         </div>
 
-        <p className="sr-only" aria-live="polite">Showing {filtered.length} {filtered.length === 1 ? "project" : "projects"}.</p>
+        <p className="sr-only" aria-live="polite">Showing {filtered.length} {filtered.length === 1 ? "entry" : "entries"}.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
-          <h2 className="sr-only">Project portfolio</h2>
+          <h2 className="sr-only">Field operations portfolio</h2>
           {filtered.map((p) => (
             <div
               key={p.id}
@@ -57,7 +57,7 @@ export function ProjectsScreen() {
               <Image
                 fill
                 sizes="(max-width: 767px) 100vw, 66vw"
-                alt=""
+                alt={p.alt}
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 src={p.image}
               />

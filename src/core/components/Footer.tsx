@@ -31,7 +31,7 @@ export function Footer() {
             Services
           </Link>
           <Link href="/projects" className="text-sm hover:opacity-80" style={{ color: "#afc8f0" }}>
-            Projects
+            Field Work
           </Link>
         </div>
 
